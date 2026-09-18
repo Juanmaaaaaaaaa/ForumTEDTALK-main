@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fórum UPB | Relevo generacional</title>
+    <link rel="stylesheet" href="./styles.css?v=portable-4" />
+  </head>
+  <body>
+    <main class="stage-shell" aria-label="Experiencia TED Talk Fórum UPB">
+      <section class="stage" id="stage">
+        <canvas id="visual-canvas" aria-hidden="true"></canvas>
+
+        <div class="grain" aria-hidden="true"></div>
+        <div class="vignette" aria-hidden="true"></div>
+
+        <div class="brand-lockup" aria-label="UPB Forum y 90 años">
+          <img class="brand-logo brand-logo-forum" src="./assets/brand-forum.png" alt="UPB Fórum Centro de Eventos" />
+          <span class="brand-divider" aria-hidden="true"></span>
+          <img class="brand-logo brand-logo-90" src="./assets/brand-90.png" alt="90 años" />
+        </div>
+
+        <section class="copy-layer" aria-live="polite">
+          <p class="eyebrow" id="moment-kicker">Future Leaders Forum · Fórum UPB</p>
+          <h1 id="moment-title"></h1>
+          <p class="subtitle" id="moment-subtitle"></p>
+        </section>
+
+        <figure class="moment-asset" id="moment-asset" aria-hidden="true">
+          <img id="moment-image" alt="" />
+        </figure>
+
+        <aside class="qr-layer" id="qr-layer" aria-label="Enlaces de cierre">
+          <a class="qr-block" id="qr-memory-link" href="#" target="_blank" rel="noopener noreferrer">
+            <div class="qr-code" id="qr-memory" aria-hidden="true"></div>
+            <span id="qr-memory-label">Memorias</span>
+          </a>
+          <a class="qr-block" id="qr-social-link" href="#" target="_blank" rel="noopener noreferrer">
+            <div class="qr-code" id="qr-social" aria-hidden="true"></div>
+            <span id="qr-social-label">@centrodeeventosupb</span>
+          </a>
+        </aside>
+
+        <nav class="operator-ui" id="operator-ui" aria-label="Controles de operacion">
+          <button class="icon-button" id="prev-button" type="button" aria-label="Momento anterior" title="Anterior">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <div class="counter" aria-label="Momento actual">
+            <span id="moment-number">01</span>
+            <span>/</span>
+            <span id="moment-total">13</span>
+          </div>
+          <button class="icon-button" id="next-button" type="button" aria-label="Siguiente momento" title="Siguiente">
+            <span aria-hidden="true">›</span>
+          </button>
+          <button class="icon-button" id="fullscreen-button" type="button" aria-label="Pantalla completa" title="Pantalla completa">
+            <span aria-hidden="true">⛶</span>
+          </button>
+          <button class="icon-button" id="help-button" type="button" aria-label="Mostrar ayuda" title="Ayuda">
+            <span aria-hidden="true">?</span>
+          </button>
+        </nav>
+
+        <div class="help-panel" id="help-panel">
+          <span>Espacio / → avanzar</span>
+          <span>← volver</span>
+          <span>F fullscreen</span>
+          <span>H ayuda</span>
+          <span>R reiniciar</span>
+          <div class="mobile-counter" aria-label="Momento actual en móvil">
+            <span id="mobile-moment-number">01</span>
+            <span>/</span>
+            <span id="mobile-moment-total">13</span>
+          </div>
+          <button class="mobile-action-button" id="reset-button" type="button" aria-label="Reiniciar experiencia">Reiniciar</button>
+          <button class="mobile-action-button" id="end-button" type="button" aria-label="Ir al cierre">Final</button>
+          <button class="mobile-action-button" id="mobile-fullscreen-button" type="button" aria-label="Pantalla completa">Fullscreen</button>
+          <div class="language-switch" aria-label="Idioma">
+            <button type="button" data-language="es">ES</button>
+            <button type="button" data-language="pt">PT</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./config.js?v=portable-4"></script>
+    <script src="./moments.js?v=portable-4"></script>
+    <script src="./visualSystem.js?v=portable-4"></script>
+    <script src="./main.js?v=portable-4"></script>
+  </body>
+</html>
